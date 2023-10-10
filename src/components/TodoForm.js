@@ -18,7 +18,7 @@ export const TodoForm = ({ addTodo }) => {
     <form onSubmit={handleSubmit} className="TodoForm">
       <input
         className="todo-input"
-        placeholder="tapper votre tache ici..."
+        placeholder="saisis votre tache ici..."
         type="text"
         value={todoTitle}
         onChange={(ev) => setTodoTitle(ev.target.value)}

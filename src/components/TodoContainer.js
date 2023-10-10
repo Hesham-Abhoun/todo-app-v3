@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { TodoItem } from "./TodoItem";
 import { TodoForm } from "./TodoForm";
 import { v4 as uuidv4 } from "uuid";
-import crypto from "crypto";
 import { EditTodoForm } from "./EditTodoForm";
 
 export const TodoContainer = () => {
@@ -12,13 +11,12 @@ export const TodoContainer = () => {
     setTodos([
       ...todos,
       {
-        id: crypto.randomBytes(16).toString("hex"),
+        id: uuidv4(),
         task: todo,
         completed: false,
         isEditing: false,
       },
     ]);
-    console.log(todo.id);
   };
 
   const deleteTodo = (id) => setTodos(todos.filter((todo) => todo.id !== id));

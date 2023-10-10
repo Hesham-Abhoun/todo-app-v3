@@ -3,15 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
-export function TodoItem({ key, task, deleteTodo, editTodo, toggleComplete }) {
+export function TodoItem({ task, deleteTodo, editTodo, toggleComplete }) {
   return (
     <div className="Todo">
       <p className={`${task.completed ? "completed" : "incompleted"}`}>
         {task.task}
       </p>
-      <p>{toggleComplete}</p>
-      {console.log(key)}
-      <p>{key}</p>
+
       <div>
         <FontAwesomeIcon
           className="edit-icon"

@@ -36,7 +36,13 @@ h1 {
   width: 100%;
   margin-bottom: 1rem;
 }
-
+.editTodo {
+  background-color: hsl(40, 100%, 44%);
+  color: red;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.6rem;
+  opacity: 1;
+}
 .todo-input {
   outline: none;
   background: none;
@@ -59,6 +65,8 @@ h1 {
   padding: 0.55rem;
   cursor: pointer;
   font-weight: bold;
+  margin: 0.4rem;
+  margin-top: 0.1rem;
 }
 
 .Todo {
